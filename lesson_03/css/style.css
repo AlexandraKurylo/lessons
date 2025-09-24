@@ -1,0 +1,62 @@
+@import url("reset.css");
+
+
+.nav-menu__text {
+    color: gold;
+}
+
+.nav-menu__list > li {
+    color: dodgerblue;
+}
+
+.nav-menu__sublist .nav-menu__subitem {
+    color: darkturquoise;
+}
+
+.first-title * {
+    color: blue;
+}
+
+[class*="__title"] * {
+	color: darkred;
+    background-color:aqua;
+}
+
+[class*="__text"] * {
+    color: blue;
+}
+
+.introduction__text ~ a {
+    color: coral;
+}
+
+.sights__title + h3 {
+    color: darksalmon;
+}
+
+.sights__img + h3 {
+    color: darksalmon;
+}
+
+.cuisine__item * {
+    color: red;
+}
+
+.cuisine h2 + h3 {
+    color: red;
+}
+
+.medicine__text .dark-text {
+    color: darkgreen;
+}
+
+.medicine__list li {
+    color: blueviolet;
+}
+
+.footer__link.link_1 {
+    color: blue;
+}
+.footer__link.link_2 {
+    color: red;
+}
