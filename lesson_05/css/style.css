@@ -75,9 +75,6 @@ body {
     margin-bottom: 60px;
 }
 
-.yoga-section__title {
-    padding-left: 30px;
-}
 
 .yoga__title {
     font-size: 35px;
@@ -99,13 +96,13 @@ body {
 
 .yoga-cards-wrapper {
     font-size: 0;
-    padding-left:-30px;
-    padding-right: -30px;
+    margin-left: -32px;
+    margin-right: -32px;
 }
 
 .yoga-card {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
     font-size: 16px;
     display: inline-block;
 	width: 33.333%;
