@@ -1,0 +1,166 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap');
+ 
+body {
+   font-family: "Lato", sans-serif; 
+   line-height: 1.25;
+}
+
+.header {
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.furniture-section {
+    margin-bottom: 60px;
+}
+
+.furniture-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 72px;
+    color: #2F302C;
+    text-align: center;
+}
+
+.furniture-cards-wrapper {
+	font-size: 0;
+    margin-left: -34px;
+    margin-right: -34px;
+}
+
+.furniture-card {
+    font-size: 16px;
+    padding-left: 34px;
+    padding-right: 34px;
+	display: inline-block;
+    text-align: center;
+	width: 33.333%;
+	vertical-align: top;
+    margin-bottom: 68px;  
+}
+
+.furniture-card__img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+ 
+.furniture-card__title {
+    font-weight: 700;
+    color: #2F302C;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.furniture-card__text-content {
+    font-weight: 500;
+    color: #7E7F7C;
+}
+
+
+.yoga-section {
+    max-width: 1200px;
+	margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.yoga-section__title {
+    padding-left: 30px;
+}
+
+.yoga__title {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "Lora", serif;
+    color:#BA936F;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+
+.yoga__subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    width: 41.666%;
+    font-family: "Montserrat", sans-serif;
+    color:#343434;
+    margin-bottom: 68px;
+}
+
+.yoga-cards-wrapper {
+    font-size: 0;
+    padding-left:-30px;
+    padding-right: -30px;
+}
+
+.yoga-card {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    display: inline-block;
+	width: 33.333%;
+	vertical-align: top;   
+}
+
+.content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    border-radius: 33px;
+    background: rgba(253, 239, 230, 0.99);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.yoga-card__title {
+    font-family: "Lora", serif;
+    font-size: 25px;
+    color:#BA936F;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.yoga-card__description {
+    font-size: 17px;
+    color: #888888;
+    margin-bottom: 67px;
+}
+
+.yoga-card__price {
+    font-size: 64px;
+    color: #343434;
+    margin-bottom: 84px;
+}
+
+.yoga-card__btn {
+    border-radius: 15px;
+    width: 77.222%;
+    height: 50px;
+    background: #ba936f;
+    font-size: 19px;
+    color:#FFFFFF;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer__link {
+    text-decoration: underline;
+}
