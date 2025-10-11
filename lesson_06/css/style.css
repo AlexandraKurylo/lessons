@@ -1,0 +1,222 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+.header {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.header__title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.list__item {
+    list-style-type: initial;
+    text-decoration: underline;
+}
+
+
+.main-section {
+    background: url("../img/background.png") center / cover no-repeat;
+    margin-bottom: 80px;
+    padding-top: 115px;
+    padding-bottom: 110px;
+}
+
+.main-section__wrapper {
+    max-width: 1132px;
+    margin: 0 auto
+}
+
+.main-section__content {
+    font-family: "Lato", sans-serif;
+    max-width: 520px;
+    margin: 0 0 0 auto;
+    font-size: 0;
+}
+.main-section__subtitle {
+    color: #2F302C;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.main-section__title {
+    font-family: "Montserrat", sans-serif;
+    color: #2F302C;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 1.04;
+    margin-bottom: 18px;
+}
+
+.main-section__description {
+    width: 100%;
+    max-width: 374px;
+    color: #7E7F7C;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.divider {
+    max-width: 308px;
+    height: 1px;
+    background-color: #2F302C;
+    margin-left: 5px;
+    margin-bottom: 36px;
+}
+
+.cards-wrapper {
+    width: 100%;
+    padding: 15px;
+    background: #2F302C;
+    margin-bottom: 80px;
+}
+
+.cards-wrapper__content {
+    max-width: 1080px;
+    font-size: 0;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin: 0 auto;
+}
+
+.card {
+    font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: inline-block;
+    width: 33.333%; 
+	vertical-align: top;
+}
+
+.card-content {
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+}
+
+.card__title {
+    margin-bottom: 17px;
+}
+.card__pricing-wrapper {
+    font-size: 0;
+    margin-bottom: 17px;
+}
+.card__pricing-1 {
+    font-size: 40px;
+    margin-right: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.card__pricing-2 {
+    font-size: 16px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.card__divider {
+    margin-bottom: 17px;
+    max-width: 47px;
+    height: 4px;
+    background-color: #31a0fe;
+}
+.card__description {
+    margin-bottom: 17px;
+}
+
+.card__list {
+    font-family: "Montserrat", sans-serif;
+    color: #2F302C;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2.3;
+    letter-spacing: 0.01em;
+}
+.card__item-green {
+    padding-left: 42px;
+	background: url("../img/check-green.svg") left center no-repeat;
+	min-height: 32px;
+}
+.card__item-gray {
+    padding-left: 42px;
+	background: url("../img/check-gray.svg") left center no-repeat;
+	min-height: 32px;
+}
+
+.card__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.card__item:last-child {
+    margin-bottom: 33px;
+}
+.card__btn {
+    border: 1px solid #252B42;
+    border-radius: 24px;
+    padding: 6px 24px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    color: #252B42;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    color: #252B42;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.01em;
+}
+
+.price {
+    color: #252B42;
+    font-family: "Open sans", sans-serif;;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.42;
+    letter-spacing: 0.01em;
+}
+
+.text {
+    color: #737373;
+    font-family: "Montserrat", sans-serif;;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.footer__link {
+    text-decoration: underline;
+}
