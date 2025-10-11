@@ -57,6 +57,7 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .main-section__title {
@@ -66,6 +67,7 @@ body {
     font-size: 96px;
     line-height: 1.04;
     margin-bottom: 18px;
+    text-transform: uppercase;
 }
 
 .main-section__description {
@@ -73,7 +75,7 @@ body {
     max-width: 374px;
     color: #7E7F7C;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.25;
 }
 
@@ -182,6 +184,7 @@ body {
     letter-spacing: 0.01em;
     color: #252B42;
     font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
 }
 
 .title {
@@ -191,6 +194,7 @@ body {
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.01em;
+    text-transform: capitalize;
 }
 
 .price {
@@ -219,4 +223,5 @@ body {
 
 .footer__link {
     text-decoration: underline;
+    text-transform: capitalize;
 }
