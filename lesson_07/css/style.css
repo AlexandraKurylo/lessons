@@ -1,0 +1,387 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+body {
+    font-family: "Open sans", sans-serif;
+}
+
+.container {
+    max-width: 1230px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.header__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.list {
+    margin-bottom: 100px;
+}
+
+.list__item {
+    font-size: 20px;
+    list-style-type: initial;
+}
+
+.list__link {
+    transition: text-decoration 0.5s ease ;
+}
+
+.list__link:hover {
+    text-decoration: underline;
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.list__link:active {
+	color: rgb(0, 60, 255);
+}
+
+.title__text{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
+.maze-game {
+    background: url("../img/maze.avif") center / cover no-repeat;
+    max-width: 1230px;
+    min-height: 700px;
+    margin-bottom: 100px;
+}
+
+.maze-game__block {
+    visibility: hidden;
+    background-color: #28a8f3;
+}
+
+.maze-game__block:hover+div, .maze-game__block:hover {
+    visibility: visible;
+
+}
+
+.maze-game__block:first-child,
+.maze-game__block:last-child {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #f7d762;
+    border: 3px solid black;
+}
+
+.maze-game__block:nth-child(1) {
+    text-align: center;
+    visibility: visible;
+    margin-left: 60px;
+}
+
+.maze-game__block:nth-child(2) {
+    width: 35px;
+    height: 290px;
+    margin-left: 60px;
+}
+
+.maze-game__block:nth-child(3) {
+    width: 150px;
+    height: 35px;
+    margin-left: 60px;
+    
+}
+
+.maze-game__block:nth-child(4) {
+    width: 35px;
+    height: 80px;
+    margin-left: 175px;
+}
+
+.maze-game__block:nth-child(5) {
+    width: 150px;
+    height: 35px;
+    margin-left: 60px;
+    
+}
+
+.maze-game__block:nth-child(6) {
+    width: 35px;
+    height: 80px;
+    margin-left: 60px;
+}
+
+.maze-game__block:nth-child(7) {
+    width: 360px;
+    height: 35px;
+    margin-left: 60px;
+}
+
+.maze-game__block:nth-child(8) {
+    width: 35px;
+    height: 150px;
+    margin-top: -150px;
+    margin-left: 400px;
+
+}
+
+.maze-game__block:nth-child(9) {
+    width: 120px;
+    height: 35px;
+    margin-top: -150px;
+    margin-left: 400px;
+    
+}
+
+.maze-game__block:nth-child(10) {
+    width: 35px;
+    height: 270px;
+    margin-top: -270px;
+    margin-left: 510px;
+    
+}
+
+.maze-game__block:nth-child(11) {
+    width: 100px;
+    height: 35px;
+    margin-top: -270px;
+    margin-left: 420px;
+    
+}
+
+.maze-game__block:nth-child(12) {
+    width: 35px;
+    height: 150px;
+    margin-top: -150px;
+    margin-left: 420px;
+    
+}
+
+.maze-game__block:nth-child(13) {
+    width: 700px;
+    height: 35px;
+    margin-top: -150px;
+    margin-left: 450px;
+    
+}
+
+.maze-game__block:nth-child(14) {
+    width: 35px;
+    height: 100px;
+    margin-bottom: -100px;
+    margin-left: 1115px;
+}
+
+.maze-game__block:nth-child(15) {
+    width: 150px;
+    height: 35px;
+    margin-top: 80px;
+    margin-left: 1000px;
+    
+}
+
+.maze-game__block:nth-child(16) {
+    width: 35px;
+    height: 200px;
+    margin-left: 1000px;
+    
+}
+
+.maze-game__block:nth-child(17) {
+    width: 150px;
+    height: 35px;
+    margin-left: 885px;
+    
+}
+
+.maze-game__block:nth-child(18) {
+    width: 35px;
+    height: 80px;
+    margin-left: 885px;
+    
+}
+
+.maze-game__block:nth-child(19) {
+    width: 250px;
+    height: 35px;
+    margin-left: 885px;
+    
+}
+
+.maze-game__block:nth-child(20) {
+    margin-left: 1100px;  
+}
+
+.cards-wrapper {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cards-wrapper__content {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: left;
+    margin-right: 8px;
+    transform-origin: top;
+    background: white;
+    box-shadow: 0px 0px 15px -8px rgba(0,0,0,1);
+    transition: all 0.3s;
+}
+
+.card__content div:not(.card__pricing-wrapper) {
+    margin-bottom: 17px;
+}
+
+.card:hover {
+    background: #e1f4ff;
+    transform: scale(1.05);
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card__content {
+    width: 100%;
+    max-width: 271px;
+}
+
+.card__pricing-wrapper {
+    display: inline-block;
+}
+.card__pricing-1 {
+    display: inline-block;
+    margin-right: 16px;
+}
+.card__pricing-2 {
+    display: inline-block;
+}
+
+.card__line {
+    max-width: 47px;
+    height: 4px;
+    background-color: #31a0fe;
+}
+
+.card__list {
+    font-family: "Montserrat", sans-serif;
+    color: #2F302C;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    padding: 16px 0;
+    margin-bottom: 17px;
+}
+
+.card__item span{
+    display: inline-block;
+    width: 100%;
+    margin-left: -42px; 
+    padding-left: 42px; 
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.card__item::before {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+	width: 32px;
+    height: 32px;
+}
+
+.card__item-green::before {
+    content: "";
+	background: url("../img/check-green.svg") 0 0 no-repeat;
+}
+.card__item-gray::before {
+    content: "";
+	background: url("../img/check-gray.svg") 0 0 no-repeat;
+}
+
+.card__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.card__btn {
+    border: 1px solid #252B42;
+    border-radius: 24px;
+    padding: 6px 24px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    color: #252B42;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+
+.card__btn:hover {
+    background: #31A0FE;
+    border: none;
+    color: white;
+}
+
+.title {
+    color: #252B42;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+}
+
+.price {
+    color: #252B42;
+    font-family: "Open sans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.42;
+    letter-spacing: 0.01em;
+}
+
+.text {
+    color: #737373;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.footer__link {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
