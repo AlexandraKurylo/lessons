@@ -1,0 +1,94 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e1eef8;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.nav-menu__list {
+    margin-bottom: 100px;
+}
+
+.nav-menu__item {
+    font-size: 20px;
+    list-style-type: initial;
+}
+
+.nav-menu__link {
+    transition: text-decoration 0.5s ease ;
+}
+
+.nav-menu__link:hover {
+    text-decoration: underline;
+}
+
+.nav-menu__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.img {
+    border-radius: 33px;
+    margin-bottom: 20px;
+}
+
+.img-content {
+    padding: 20px;
+    background-color: #96d0f4;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.25;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+
+.img-content:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.decoration-right {
+    background-image: url(../img/img_webp/decoration-right.webp);
+    background-repeat: no-repeat;
+    min-height: 450px;
+}
+
+.decoration-left {
+    background-image: url(../img/img_webp/decoration-left.webp);
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.decoration-circle {
+    background-image: url(../img/img_webp/decoration-circle.webp);
+    background-repeat: no-repeat;
+    background-position: 0 200px;
+    min-height: 450px;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.footer__link {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
