@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework 10</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Homework 10</h1>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Експерименти &blacktriangledown;</a>
+                            <ul class="menu__submenu submenu">
+                                    <li class="submenu__item submenu__item--sub-submenu">
+                                        <a href="#position" class="submenu__link">Позиціювання &blacktriangledown;</a>
+                                        <ul class="submenu__sub-submenu sub-submenu">
+                                            <li class="sub-submenu__item">
+                                                <a href="#static" class="sub-submenu__link">Статичне (static)</a>
+                                            </li>
+                                            <li class="sub-submenu__item">
+                                                <a href="#relative" class="sub-submenu__link">Відносне (relative)</a>
+                                            </li>
+                                            <li class="sub-submenu__item">
+                                                <a href="#absolute" class="sub-submenu__link">Абсолютне (absolute)</a>
+                                            </li>
+                                            <li class="sub-submenu__item">
+                                                <a href="#sticky" class="sub-submenu__link">Липке (sticky)</a>
+                                            </li>
+                                            <li class="sub-submenu__item">
+                                                <a href="#fixed" class="sub-submenu__link">Фіксоване (fixed)</a>
+                                            </li>
+                                            <li class="sub-submenu__item">
+                                                <a href="#z-index" class="sub-submenu__link">z-index</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="menu__item"><a href="homework.html" class="menu__link">Домашня робота</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div id="hero" class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            <a href="#position" class="hero__link">Експерименти &#8681;</a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="position" class="position">
+                <div class="position__container">
+                    <div class="position__content">
+                        <h2 class="position__title title">
+                            Що таке позиціонування CSS?
+                        </h2>
+                        <div class="position__text">
+                            <p>Різне CSS позиціонування дуже часто використовується при верстці макетів і відкриває для нас нові цікаві можливості розташування елементів у потоці. Але треба бути обережними та вміти поводитися з цими можливостями грамотно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="static" class="static">
+                <div class="static__container">
+                    <div class="static__content">
+                        <h2 class="static__title title">
+                            Статичне позиціювання
+                        </h2>
+                        <div class="static__text">
+                            <p>position: static; — значення static це значення за замовчуванням його не потрібно вказувати.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="relative" class="relative">
+                <div class="relative__container">
+                    <div class="relative__content">
+                        <h2 class="relative__title title">
+                            Відносне позиціонування
+                        </h2>
+                        <div class="relative__text">
+                            <p>position: relative; — об'єкт позиціонується відносно свого поточного місця положення в коді. З position:relative; працюють властивості top, left, right, bottom та z-index </p>
+                        </div>
+                        <div class="relative__experiments">
+                            <div class="relative__block-1 block-1 block"></div>
+                            <div class="relative__block-2 block-2 block">z-index: 3</div>
+                            <div class="relative__block-3 block-3 block">z-index: 2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="absolute" class="absolute">
+                <div class="absolute__container">
+                    <div class="absolute__content">
+                        <h2 class="absolute__title title">
+                            Абсолютне позиціювання
+                        </h2>
+                        <div class="absolute__text">
+                            position: absolute; — абсолютне (безумовне) позиціонування. Об'єкт позиціонується відносно першого батьківського елементу, position якого відмінний від static. Об'єкт втрачає свою блочну сутність та простір який він займав.
+                        </div>
+                        <div class="absolute__experiments">
+                            <h3 class="absolute__label absolute__label--relative">position: relative</h3>
+                            <div class="absolute__box">
+                                <h3 class="absolute__label">position: static</h3>
+                                <div class="absolute__block-1 block-1 block">position: absolute</div>
+                                <div class="absolute__block-2 block-2 block">position: absolute</div>
+                                <div class="absolute__block-3 block-3 block">position: absolute</div>
+                            </div>
+                        </div>
+                        <div class="absolute__text">
+                            <p>Об'єкти позіціонуються відносно великого блоку, властивість position якого відмінна від static.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sticky" class="sticky">
+                <div class="sticky__container">
+                    <div class="sticky__content">
+                        <h2 class="sticky__title title">
+                            Липке позиціювання
+                        </h2>
+                        <div class="sticky__text">
+                            <p>position: sticky; — гібридне поєднання значень static та fixed. Спочатку елемент поводитися як static, але після того, як скрол доходить до нього, стає fixed. Залишається блочним. </p>
+                        </div>
+                        <div class="sticky__experiments">
+                            <div class="sticky__block-1 block-1 block">position: sticky</div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima a expedita assumenda excepturi molestias aperiam facere quia! Iste blanditiis consequatur facere eum atque, sint ratione nemo at ea repellendus consectetur? Dolorem voluptatibus fuga consectetur! Tempora error illo, sint cum inventore doloribus aut cupiditate molestias perspiciatis reprehenderit reiciendis nihil voluptatibus eveniet iure accusantium fugit esse nisi. Dignissimos inventore architecto dolor id repellendus repudiandae laudantium numquam magni. Dolore earum assumenda quasi expedita ullam quis delectus corporis quidem odio, fugiat non, ducimus consequuntur a tempora! Voluptas, repellat dolorem iure a repudiandae reprehenderit nihil at ad voluptatem expedita inventore perferendis? Veritatis debitis praesentium molestias ratione enim ea temporibus iusto delectus porro consequatur unde fugit, accusamus, tenetur autem numquam qui inventore. Ipsam tempore itaque necessitatibus quidem aperiam nostrum similique accusamus perspiciatis animi facere soluta, aut temporibus, ab esse. Debitis, explicabo officia? Maxime, at voluptate. Aspernatur modi saepe amet labore, magni quasi, repellendus totam voluptatem illo, suscipit adipisci voluptate quia explicabo officiis! Eaque magni fugiat minima fugit quo qui odio consectetur provident temporibus voluptatibus ea iusto ratione saepe dolorum sed sapiente perspiciatis quasi ut, laborum numquam voluptate dolores nisi! Dolore quae ipsa similique, accusamus est sapiente enim in vitae exercitationem repellat earum, commodi cumque corrupti error tenetur velit officia neque cum vero illo hic! Recusandae exercitationem voluptate consectetur unde vero, cum reiciendis dolores tempore rem magnam sapiente? Id, porro eaque nesciunt ducimus, at voluptate doloribus laboriosam error facilis, inventore quod nulla maxime officiis quas exercitationem sunt delectus placeat perferendis! Adipisci reiciendis quod quisquam labore enim, suscipit architecto quaerat obcaecati molestias nihil nemo eius ex sint cumque facilis facere vel maxime molestiae veniam quo odit magnam inventore ullam? Dolore accusantium, culpa consequuntur quisquam temporibus nobis. Ab nihil molestiae et ullam aspernatur illo hic tempora cumque vel, soluta laboriosam animi eius officiis officia facilis iusto nostrum. Officiis error a, perspiciatis veniam obcaecati perferendis earum nisi corrupti expedita laudantium laborum nemo voluptatum neque iusto voluptates dolorum laboriosam minus in. Rerum neque doloribus et. Distinctio reiciendis, laborum doloribus, nulla quo, tempore rem consectetur impedit qui atque natus vel molestias minima suscipit alias eius eligendi minus et hic sunt perspiciatis? Mollitia culpa, reprehenderit possimus, distinctio nulla ullam doloribus, quos deserunt quod rem consectetur. Suscipit sed voluptate labore est ea fuga quaerat, quo porro cupiditate fugit id ipsum aliquid alias modi nulla consequuntur autem. Reprehenderit cumque alias delectus laudantium sunt. Dolor voluptates quod accusamus a, non omnis minus quisquam sunt. Numquam, sunt cum illo mollitia, at expedita ex modi laudantium accusamus aperiam ut! Distinctio, rem quibusdam! Libero tenetur, praesentium at suscipit impedit exercitationem blanditiis corporis natus cum reprehenderit ex unde id dicta consequatur quae dolores ut, illo, hic assumenda quas voluptas aliquid cupiditate quos odio. Magnam perferendis nisi, magni, aspernatur maxime accusantium iusto itaque obcaecati sapiente ea necessitatibus accusamus reiciendis fugiat aliquid rem qui quisquam maiores veniam, assumenda ratione illum eaque eveniet cum? Assumenda sequi aspernatur, eos ad quos ipsum hic, consequuntur quisquam animi quia distinctio commodi et placeat nulla ipsam officiis corporis eius enim nam rerum laboriosam iusto! Mollitia, aperiam earum!</p>
+                            <div class="sticky__block-2 block-2 block">position: sticky</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, facilis? Reprehenderit neque libero laboriosam culpa quidem maxime officia nemo inventore tempora vero illum voluptatibus nesciunt accusantium corrupti veniam consequatur tempore consectetur ex sint eius dignissimos quod, vel deserunt. Beatae repellat error reiciendis, voluptas pariatur maxime sunt ea unde quisquam velit expedita repellendus, exercitationem provident? Ut non atque molestiae dolor consequatur animi ratione exercitationem, temporibus delectus minus aspernatur optio quos debitis voluptatem, recusandae vitae voluptate cumque modi nam alias fugit? Molestias fugiat provident numquam veniam distinctio quia magni maxime ab illum veritatis iusto exercitationem, praesentium aperiam illo possimus iure cumque nobis! Aperiam eos itaque illum nostrum nisi ullam quis natus rem distinctio inventore ratione obcaecati optio eligendi pariatur nam fuga non similique, quae ea at sit culpa corrupti sed. Provident animi laborum deleniti? Eos quos consectetur amet nobis maiores debitis, voluptatum, porro aut voluptatem et exercitationem corrupti nulla excepturi aliquid ipsa. Repellat id amet quia vel doloremque illo maxime voluptas alias cumque quo beatae quae sapiente consequatur tenetur quam consequuntur ullam maiores ratione, incidunt iste. Voluptatum repellat magnam veniam sed exercitationem, iste explicabo? Non reprehenderit cumque similique numquam doloremque ipsam molestiae alias accusamus ut vero rem quos itaque dolorem nihil enim praesentium suscipit laudantium placeat quis corporis, aspernatur adipisci aperiam reiciendis! At, eligendi architecto culpa deserunt accusamus explicabo sequi suscipit expedita, autem porro aliquid libero dolorem sed alias eaque, cumque blanditiis doloribus incidunt. Doloribus corrupti unde rem possimus facilis maxime fuga, minima esse molestias maiores provident dolorum nihil aliquam totam ad ipsam aperiam magni dolores distinctio repellat! Aliquid rerum hic alias aspernatur quibusdam fugit, aliquam temporibus vero! Nulla consequatur totam voluptas explicabo eius iure, et dolorem officiis aliquid cum fuga natus illo unde modi. Quos dicta ipsum doloremque perspiciatis earum sed, facere praesentium fugit voluptatum nobis maxime, quia odit numquam expedita reprehenderit accusantium corrupti, quas corporis aliquam. Explicabo consectetur nemo quia soluta voluptatibus reprehenderit! Ullam veritatis magnam magni repellat voluptatem similique dolor dolorem alias, suscipit ratione possimus obcaecati architecto est tempora aperiam excepturi ea quas ab? Accusantium delectus fugiat qui debitis, tenetur temporibus quidem officiis numquam incidunt dignissimos nobis totam, dolores non dolor dolore, omnis nulla eveniet ratione in cumque? Inventore harum voluptatibus, dolor, cumque sapiente rem, a repudiandae ducimus vero eaque tenetur cupiditate consequatur delectus voluptatum distinctio quidem numquam fuga. Quasi molestias repellat porro ipsum perspiciatis hic sint impedit debitis minus id. Sint consequatur debitis, dolorum quo eligendi est nihil fuga at? Error, autem sequi nemo incidunt unde ex dolorem ipsa animi, eaque sit eius saepe, nulla hic soluta. Sequi fugiat odio recusandae assumenda, veniam magni pariatur similique quos nemo! A quisquam, porro voluptatem distinctio exercitationem quaerat nam odio quae quo illum officiis ipsa sed perspiciatis nesciunt commodi, amet dolorem. Reiciendis repudiandae explicabo sint quas recusandae quaerat debitis. Maiores dolorem fugit cumque culpa dolor pariatur ullam veniam voluptatibus temporibus reprehenderit. Voluptates hic fugiat blanditiis ut voluptatem ea quia iusto fuga, distinctio impedit autem eos ipsa perferendis ab praesentium consequatur perspiciatis illum eveniet excepturi! Consequatur atque iste porro eius iure minima?</p>
+                            <div class="sticky__block-3 block-3 block">position: sticky</div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia placeat iure ratione blanditiis quisquam voluptatum, ea laudantium nobis voluptatem tenetur quod, praesentium beatae commodi obcaecati vitae quia doloremque ad optio, temporibus dicta cupiditate aliquid? Accusamus modi voluptates natus voluptatibus! Excepturi maxime saepe ea vero libero similique aliquam placeat natus sapiente a numquam voluptate incidunt nihil, velit modi nobis maiores quasi quod temporibus ducimus! Sed laboriosam consectetur quo sint iste nesciunt mollitia unde sequi alias earum velit delectus asperiores, nam dolorum maiores iure labore expedita beatae quia inventore excepturi? Commodi aspernatur nulla impedit facilis perspiciatis inventore magni culpa officia odit id, harum assumenda fuga dolorum quos aperiam. Ipsum tenetur ullam ad debitis fugit, ab numquam dolores, culpa nam eum quaerat illum accusamus quasi asperiores cupiditate voluptate. Maiores nam officiis iste, natus vitae sit! Cum placeat omnis impedit illum eaque nihil, est neque, ad, non reprehenderit rerum corrupti quaerat cumque at magni totam quidem qui recusandae dolorum excepturi? Hic vel veritatis placeat eveniet saepe sint nobis ducimus vero exercitationem magni maxime, velit quod impedit asperiores error, excepturi corporis eaque sequi natus nulla. Sint laudantium quam tempore eum corporis cumque impedit soluta officiis excepturi, obcaecati aperiam consequatur minus velit et totam iste reprehenderit blanditiis voluptatibus autem suscipit modi quidem! Optio illum impedit ab est ipsam sit natus quisquam temporibus deserunt, saepe sint ad ullam architecto aliquid, praesentium exercitationem fugit et cupiditate. Ex, voluptas libero animi eveniet numquam nihil enim. Obcaecati sequi ducimus suscipit magni excepturi, repellendus laudantium id blanditiis nemo harum quis veniam dolorem culpa possimus iusto nihil tempore fuga illo, reprehenderit maiores dicta. Veritatis repudiandae fuga, perspiciatis placeat, natus quos quam labore aspernatur at iure repellendus ut facere distinctio. Sunt fuga vitae deserunt, hic sint doloremque, modi earum aliquid voluptate tempora illo, illum beatae neque. Aliquam assumenda neque eos sed temporibus sunt in eius a rerum tenetur quibusdam ad ipsum nesciunt repellat maxime fugiat nemo, nulla repellendus, placeat officia enim atque cumque. Quae quia sed minus a deleniti facilis molestias aspernatur commodi maiores inventore temporibus explicabo sit exercitationem cupiditate debitis iure officia perferendis placeat doloribus quidem optio ipsam ratione, adipisci ad. Soluta cupiditate natus sunt recusandae expedita mollitia repellendus optio esse ipsam, quisquam quia aspernatur laudantium laborum quo quis dolorem tenetur voluptate ab eum quod eligendi ex ipsa. Ullam saepe nemo libero ipsa. Aliquid cum, molestiae porro aliquam quia odio dolorum eum neque amet ut repellendus adipisci, excepturi cupiditate nisi? Libero dolore ipsum, excepturi iusto est minima. Labore minima vero, ipsum atque necessitatibus quidem culpa odio quas corrupti itaque temporibus ducimus nemo rem beatae in? Pariatur aperiam, voluptatibus aliquid ab unde minima dignissimos, laboriosam, dolorum exercitationem eligendi enim quo ea. Consectetur eveniet alias iusto exercitationem dolor non culpa asperiores accusamus pariatur aspernatur, voluptates earum, illo ipsum iste aliquam. Officia fugit, voluptates soluta fugiat a modi itaque est quidem odit reiciendis reprehenderit, quasi laborum sequi cumque, nobis perferendis omnis saepe dolore atque doloremque eius vitae quam? Nisi tenetur blanditiis aspernatur provident dolore aperiam optio, quae possimus necessitatibus eos quis corrupti dignissimos voluptas voluptate.</p>
+                        </div>
+                        <div class="sticky__text">
+                            <p><mark>ВАЖЛИВО!</mark> Не працює, якщо у батьківських об'єктах присутній overflow: hidden;. Працює з новим значенням overflow: clip для батьківських блоків. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fixed" class="fixed">
+                <div class="fixed__container">
+                    <div class="fixed__content">
+                        <h2 class="fixed__title title">
+                            Фіксоване позиціювання
+                        </h2>
+                        <div class="fixed__text">
+                            <p>position: fixed; — фіксоване позиціонування відносно вікна браузера (вюпорта). Об'єкт втрачає блочну сутність, положення в коді, простір. Не бере участі у скролі (не скролиться з контентом).</p>
+                        </div>
+                        <div class="fixed__experiments">
+                            <div class="fixed__block-1 block-1 block">position: fixed</div>
+                            <div class="fixed__block-2 block-2 block">position: fixed</div>
+                            <div class="fixed__block-3 block-3 block">position: absolute</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="z-index" class="z-index">
+                <div class="z-index__container">
+                    <div class="z-index__content">
+                        <h2 class="z-index__title title">
+                            z-index
+                        </h2>
+                        <ul class="z-index__list">
+                            <li class="z-index__item">z-index - керує положенням об'єкту по осі Z auto - (за замовченням) ближчим буде об'єкт який нижче по коду.</li>
+                            <li class="z-index__item">Число від 0 до 9999(?) - порядковий номер на осі Z.</li>
+                            <li class="z-index__item">Не впливає на позіціонування батьківського об'єкту у якого position відмінний від static.</li>
+                            <li class="z-index__item">Від'ємний z-index "сховає" об'єкт на задній план (не статичний об'єкт "сховається" за статичні/не статичні)
+                            </li>
+                        </ul>
+                        <div class="z-index__experiments">
+                            <div class="z-index__box z-index__box--green">
+                                <h3 class="z-index__label">z-index: 2</h3>
+                                <div class="z-index__block-1 block-1 block">z-index: 2</div>
+                                <div class="z-index__block-2 block-2 block">z-index: 1</div>
+                            </div>
+                            <div class="z-index__box z-index__box--yellow">
+                                <div class="z-index__block-3 block-3 block"></div>
+                                <h3 class="z-index__label z-index__label--yellow">z-index: 1</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>&uarr;</span>
+            <a class="footer__link" href="#hero">Go up</a>
+        </footer>
+    </div>
+</body>
+</html>
