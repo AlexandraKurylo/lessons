@@ -427,35 +427,23 @@ body {
 .cards__item {
     position: relative; 
     display: inline-block;
-    width: 251px; 
+    max-width: 251px; 
     height: 315px; 
     overflow: hidden;  
 	font-family: "Playfair Display", serif;
 	font-weight: 400;
 	color: #fff;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.501);
 }
 
 .cards__item:not(:last-child) {
 	margin-right: 123px;
 }
 
-.cards__item--cleansers {
-	background-image: url('../img/сleanser.jpg');
-    background-size: cover; 
-    background-position: center center; 
-}
 
-.cards__item--eye-patches {
-	background-image: url('../img/eye-patches.jpg');
-    background-size: cover; 
-    background-position: center center; 
-}
-
-.cards__item--masks {
-	background-image: url('../img/mask.jpg');
-    background-size: cover; 
-    background-position: center center; 
+.cards__img {
+	position: relative;
+	max-width: 100%;
 }
 
 .cards__overlay {
