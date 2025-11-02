@@ -1,0 +1,195 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+    overflow: hidden;
+}
+
+[class*="__container"] {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.background__img {
+    background: url('../img/background.jpg') left center / cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.train {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30px;
+    left: 0;
+    transform: translateX(70px);
+}
+
+.train__main-wagon {
+    z-index: 2;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(23, 40, 173, 1) 0%, rgba(79, 114, 255, 1) 100%);
+    width: 350px;
+    height: 110px;
+    bottom: 130px;
+    left: 70px;
+    border-radius: 10px 0 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.train__window-block {
+    position: absolute;
+    background: linear-gradient(0deg,rgba(79, 114, 255, 1) 0%, rgba(23, 40, 173, 1) 100%);
+    width: 170px;
+    height: 110px;
+    bottom: 110px;
+    left: 180px;
+    border-radius: 10px 10px 0 0;
+}
+
+.train__stack {
+    position: absolute;
+    background: linear-gradient(0deg,rgba(79, 114, 255, 1) 0%, rgba(23, 40, 173, 1) 100%);
+    width: 45px;
+    height: 60px;
+    bottom: 110px;
+    left: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.train__window {
+    position: absolute;
+    z-index: 3;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.train__window--small {
+    width: 85px;
+    height: 85px;
+    bottom: 110px;
+    left: 200px;
+}
+
+.train__evgeny {
+    width: 100%;
+    height: 80%;
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.train__connector {
+    position: absolute;
+    height: 20px;
+    width: 900px;
+    bottom: 150px;
+    z-index: 1;
+    left: 70px;
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.train__secondary-wagon {
+    z-index: 2;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 130px;
+    background: linear-gradient(0deg,rgba(251, 255, 0, 1) 0%, rgba(212, 191, 59, 1) 100%);
+    width: 350px;
+    height: 220px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.train__secondary-wagon--first {
+    left: 430px;
+}
+
+.train__window--big {
+    z-index: 3;
+    width: 100px;
+    height: 100px; 
+    bottom: 85px;
+}
+
+.train__window--first {
+    left: 40px;
+}
+
+.train__window--second {
+    right: 40px;
+}
+
+.train__secondary-wagon--second {
+    left: 790px;
+    background: linear-gradient(0deg,rgba(79, 114, 255, 1) 0%, rgba(23, 40, 173, 1) 100%);
+}
+
+.train__wheel {
+    z-index: 3;
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    background: url('../img/wheel-yevhen.svg') center center / contain no-repeat, radial-gradient(circle,rgba(185, 194, 235, 1) 0%, rgba(240, 240, 194, 1) 0%, rgba(255, 255, 0, 1) 100%);
+    border-radius: 50%;
+    bottom: -70px;
+    transform-origin: center center;
+    animation: spin 5s linear infinite;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.train__wheel:hover {
+    animation: spin 5s linear infinite;
+}
+
+.train__wheel--blue {
+   background: url('../img/wheel-yevhen.svg') center center / contain no-repeat, radial-gradient(circle,rgba(173, 183, 255, 1) 0%, rgba(0, 51, 255, 1) 100%);
+}
+
+.train__wheel--first {
+    left: 20px;
+}
+
+.train__wheel--second {
+    right: 20px;
+}
+
+.traffic-light {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid black;
+    bottom: 333px
+}
+
+.traffic-light--red {
+    left: 195px;
+    background: radial-gradient(circle,rgba(255, 201, 199, 1) 0%, rgba(255, 17, 0, 1) 100%);
+}
+
+.traffic-light--green {
+    left: 306px;
+    background: radial-gradient(circle,rgba(199, 255, 222, 1) 0%, rgba(0, 255, 77, 1) 100%);
+}
+
+.traffic-light--red:hover {
+    background: red;
+}
+
+.traffic-light--green:hover {
+    background: rgb(0, 255, 34);
+}
+
+/*Анімація обертання коліс*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
