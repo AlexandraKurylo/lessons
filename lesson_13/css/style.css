@@ -62,7 +62,8 @@ body {
 }
 
 .header__container {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header__title {
@@ -216,7 +217,8 @@ body {
     background-color: #d1effc;
 }
 .footer__container {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 .footer__link {
