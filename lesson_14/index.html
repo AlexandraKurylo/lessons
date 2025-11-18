@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework 14</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header__container">
+                <div class="header__title title">
+                    <p>Homework 14</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="register">
+                <div class="register__container">
+                    <div class="register__header header-register">
+                        <h2 class="header-register__title">
+                            REGISTER TO FURNITUR
+                        </h2>
+                        <div class="header-register__text">
+                            <p>
+                                GET MONTHLY VOUCHER WITH JUST ONE CLICK!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="register__content">
+                        <div class="register__wrapper">
+                            <form action="#" method="post" class="register__form form-register">
+                                <div class="form-register__header">
+                                    <h2 class="form-register__title">
+                                        YOUR INFORMATION
+                                    </h2>
+                                    <div class="form-register__text">
+                                        <p>You already have an account? <a href="#" class="form-register__link"> Sign in here</a></p>
+                                    </div>
+                                </div>
+                                <div class="form-register__fields">
+                                    <div class="form-register__row">
+                                        <div class="form-register__field">
+                                            <input type="text" class="form-register__input" name="name" id="name" placeholder="Your name" required>
+                                        </div>
+                                        <div class="form-register__field">
+                                            <input type="email" class="form-register__input" name="email" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-register__field">
+                                        <input type="tel" class="form-register__input" name="phone" id="phone" placeholder="Phone number" pattern="\+?[0-9]{1,4}[0-9]{6,14}$" required>
+                                    </div>
+                                    <div class="form-register__row">
+                                        <div class="form-register__field">
+                                            <input type="password" class="form-register__input" name="password" id="password" placeholder="Password" required>
+                                        </div>
+                                        <div class="form-register__field">
+                                            <input type="password" class="form-register__input" name="reset-password" id="reset-password" placeholder="Reset Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="form-register__button button">
+                                    Create an account
+                                </button>
+                            </form>
+                            <div class="register__banner banner-register">
+                                <picture>
+                                    <source srcset="img/avif/lights(1x).avif 1x, img/avif/lights(2x).avif 2x, img/avif/lights(3x).avif 3x" type="image/avif">
+                                    <source srcset="img/webp/lights(1x).webp 1x, img/webp/lights(2x).webp 2x, img/webp/lights(3x).webp 3x" type="image/webp">
+                                    <img src="img/png/lights(1x).png" class="banner-register__img" alt="Lights">
+                                </picture>
+                                <div class="banner-register__info">
+                                    <div class="banner-register__label label">
+                                        HOT
+                                    </div>
+                                    <h3 class="banner-register__title">
+                                        DISCOUNT 25% FOR NEW MEMBER
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <a class="footer__link title" href="#header">&uarr; Go up</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
