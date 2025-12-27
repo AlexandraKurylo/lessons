@@ -1,0 +1,14 @@
+@mixin container($max-width: 63.5rem, $display: flex, $direction: column, $justify-content: center, $align-items: center) {
+    max-width: $max-width;
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+@mixin linkButton($font-size: 0.875rem, $border: solid 1px #000, $padding: 0.625rem 3.125rem) {
+    font-size: $font-size;
+    border: $border;
+    padding: $padding;
+}

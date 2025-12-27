@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Homework 19</title>
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo">INFO BAO</a>
+          <nav class="header__menu menu">
+            <div class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Blogs</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Cosmemics Info</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="icon-menu"><span></span></button>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="hero">
+          <picture class="hero__background">
+            <source
+              srcset="
+                img/avif/home(1x).avif 1x,
+                img/avif/home(2x).avif 2x,
+                img/avif/home(3x).avif 3x
+              "
+              type="image/avif"
+            />
+            <source
+              srcset="
+                img/webp/home(1x).webp 1x,
+                img/webp/home(2x).webp 2x,
+                img/webp/home(3x).webp 3x
+              "
+              type="image/webp"
+            />
+            <img
+              src="img/jpg/home(1x).jpg"
+              class="hero__bg-image"
+              alt="background-image"
+            />
+          </picture>
+          <div class="hero__container">
+            <article class="hero__content">
+              <h1 class="hero__title">About Cosmetics</h1>
+              <div class="hero__text">
+                <p>Learn more about other cosmetics with INFO BAO</p>
+              </div>
+              <a href="#" class="hero__link"><span>More information</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="about__container">
+            <h2 class="about__title">
+                About Us
+            </h2>
+            <div class="about__content">
+                <article class="about__info info-about">
+                    <h3 class="info-about__title">
+                        Start new info
+                    </h3>
+                    <div class="info-about__text">
+                        <p>When you want buy new cosmetics you need know about this cosmetics. This site help you find cosmetics what you want. We can help you to get acquainted with cosmetics. And you can find information about skin problem for teenager, adult and elder woman. We tell you about face skin cosmetics, hair cosmetics, cosmetics for makeup. We have got three sections: Korean cosmetics, American cosmetics, Europian cosmetics. </p>
+                        <p>We talk about brands: CHI(American hair cosmetics), Some by mi(Korean face cosmetics), La Roche-Posay(French face cosmetics) and other brands. We take cosmetics different price. Because not all can buy expensive cosmetics but all women want look beautiful. That's why we start this project! All women can buy cosmetics!</p>
+                    </div>
+                </article>
+                <figure class="about__media">
+                    <picture>
+                        <source srcset="img/avif/about-home(1x).avif 1x, img/avif/about-home(2x).avif 2x, img/avif/about-home(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/about-home(1x).webp 1x, img/webp/about-home(2x).webp 2x, img/webp/about-home(3x).webp 3x" type="image/webp">
+                        <img class="about__img img" src="img/jpg/about-home(1x).jpg" alt="women">
+                    </picture>
+                </figure>
+            </div>
+            <a href="#" class="about__link"><span>More</span></a>
+            <hr class="separator">
+          </div>
+        </section>
+
+        <section class="cosmetics">
+          <div class="cosmetics__container">
+            <h2 class="cosmetics__title">
+              Cosmetics Info
+            </h2>
+            <nav class="cosmetics__menu menu-cosmetics">
+              <ul class="menu-cosmetics__list">
+                <li class="menu-cosmetics__item"><a href="#" class="menu-cosmetics__link">Korean</a></li>
+                <li class="menu-cosmetics__item"><a href="#" class="menu-cosmetics__link">Europian</a></li>
+                <li class="menu-cosmetics__item"><a href="#" class="menu-cosmetics__link">American </a></li>
+              </ul>
+            </nav>
+            <div class="cosmetics__items">
+              <figure class="cosmetics__item item-cosmetics">
+                <a href="#" class="item-cosmetics__link-wrapper">
+                  <picture class="item-cosmetics__media">
+                      <source srcset="img/avif/serum(1x).avif 1x, img/avif/serum(2x).avif 2x, img/avif/serum(3x).avif 3x" type="image/avif">
+                      <source srcset="img/webp/serum(1x).webp 1x, img/webp/serum(2x).webp 2x, img/webp/serum(3x).webp 3x" type="image/webp">
+                      <img class="item-cosmetics__img img" src="img/jpg/serum(1x).jpg" alt="serum">
+                  </picture>
+                  <figcaption class="item-cosmetics__caption">Cosrx AC Collection Blemish Spot Clearing Serum</figcaption>
+                </a>
+              </figure>
+
+              <figure class="cosmetics__item item-cosmetics">
+                <a href="#" class="item-cosmetics__link-wrapper">
+                  <picture class="item-cosmetics__media">
+                      <source srcset="img/avif/emulsion(1x).avif 1x, img/avif/emulsion(2x).avif 2x, img/avif/emulsion(3x).avif 3x" type="image/avif">
+                      <source srcset="img/webp/emulsion(1x).webp 1x, img/webp/emulsion(2x).webp 2x, img/webp/emulsion(3x).webp 3x" type="image/webp">
+                      <img class="item-cosmetics__img img" src="img/jpg/emulsion(1x).jpg" alt="emulsion">
+                  </picture>
+                  <figcaption class="item-cosmetics__caption">CHI Luxury Black <br> Seed Oil Dry Oil</figcaption>
+                </a>
+              </figure>
+
+              <figure class="cosmetics__item item-cosmetics">
+                <a href="#" class="item-cosmetics__link-wrapper">
+                  <picture class="item-cosmetics__media">
+                      <source srcset="img/avif/cream(1x).avif 1x, img/avif/cream(2x).avif 2x, img/avif/cream(3x).avif 3x" type="image/avif">
+                      <source srcset="img/webp/cream(1x).webp 1x, img/webp/cream(2x).webp 2x, img/webp/cream(3x).webp 3x" type="image/webp">
+                      <img class="item-cosmetics__img img" src="img/jpg/cream(1x).jpg" alt="cream">
+                  </picture>
+                  <figcaption class="item-cosmetics__caption">Heimish Bulgarian <br> Rose Satin Cream</figcaption>
+                </a>
+              </figure>
+
+              <figure class="cosmetics__item item-cosmetics">
+                <a href="#" class="item-cosmetics__link-wrapper">
+                  <picture class="item-cosmetics__media">
+                      <source srcset="img/avif/serum-la-roche(1x).avif 1x, img/avif/serum-la-roche(2x).avif 2x, img/avif/serum-la-roche(3x).avif 3x" type="image/avif">
+                      <source srcset="img/webp/serum-la-roche(1x).webp 1x, img/webp/serum-la-roche(2x).webp 2x, img/webp/serum-la-roche(3x).webp 3x" type="image/webp">
+                      <img class="item-cosmetics__img img" src="img/jpg/serum-la-roche(1x).jpg" alt="serum-la-roche">
+                  </picture>
+                  <figcaption class="item-cosmetics__caption">La Roche-Posay Hyalu <br> B5 Serum</figcaption>
+                </a>
+              </figure>
+
+              <figure class="cosmetics__item item-cosmetics">
+                <a href="#" class="item-cosmetics__link-wrapper">
+                  <picture class="item-cosmetics__media">
+                      <source srcset="img/avif/cream-lancome(1x).avif 1x, img/avif/cream-lancome(2x).avif 2x, img/avif/cream-lancome(3x).avif 3x" type="image/avif">
+                      <source srcset="img/webp/cream-lancome(1x).webp 1x, img/webp/cream-lancome(2x).webp 2x, img/webp/cream-lancome(3x).webp 3x" type="image/webp">
+                      <img class="item-cosmetics__img img" src="img/jpg/cream-lancome(1x).jpg" alt="cream-lancome">
+                  </picture>
+                  <figcaption class="item-cosmetics__caption">Lancome Genifique <br> Youth Activating Day Cream</figcaption>
+                </a>
+              </figure>
+
+              <figure class="cosmetics__item item-cosmetics">
+                <a href="#" class="item-cosmetics__link-wrapper">
+                  <picture class="item-cosmetics__media">
+                      <source srcset="img/avif/mask(1x).avif 1x, img/avif/mask(2x).avif 2x, img/avif/mask(3x).avif 3x" type="image/avif">
+                      <source srcset="img/webp/mask(1x).webp 1x, img/webp/mask(2x).webp 2x, img/webp/mask(3x).webp 3x" type="image/webp">
+                      <img class="item-cosmetics__img img" src="img/jpg/mask(1x).jpg" alt="mask">
+                  </picture>
+                  <figcaption class="item-cosmetics__caption">Dermalogica Daily <br> Skin Health Charcoal Rescue Masque</figcaption>
+                </a>
+              </figure>
+            </div>
+
+            <a href="#" class="cosmetics__link"><span>More</span></a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+            <a class="footer__link title" href="#wrapper">&uarr; Go up</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
