@@ -11,6 +11,7 @@
       <header class="header">
         <div class="header__container">
           <a href="#" class="header__logo">INFO BAO</a>
+          <button class="icon-menu" aria-label="Toggle menu"><span></span></button>
           <nav class="header__menu menu">
             <div class="menu__body">
               <ul class="menu__list">
@@ -32,7 +33,6 @@
               </ul>
             </div>
           </nav>
-          <button class="icon-menu"><span></span></button>
         </div>
       </header>
 
@@ -62,13 +62,13 @@
             />
           </picture>
           <div class="hero__container">
-            <article class="hero__content">
+            <div class="hero__content">
               <h1 class="hero__title">About Cosmetics</h1>
               <div class="hero__text">
                 <p>Learn more about other cosmetics with INFO BAO</p>
               </div>
               <a href="#" class="hero__link"><span>More information</span></a>
-            </article>
+            </div>
           </div>
         </section>
 
@@ -88,7 +88,7 @@
                     </div>
                 </article>
                 <figure class="about__media">
-                    <picture>
+                    <picture class="about__media">
                         <source srcset="img/avif/about-home(1x).avif 1x, img/avif/about-home(2x).avif 2x, img/avif/about-home(3x).avif 3x" type="image/avif">
                         <source srcset="img/webp/about-home(1x).webp 1x, img/webp/about-home(2x).webp 2x, img/webp/about-home(3x).webp 3x" type="image/webp">
                         <img class="about__img img" src="img/jpg/about-home(1x).jpg" alt="women">
@@ -100,7 +100,7 @@
           </div>
         </section>
 
-        <section class="cosmetics">
+         <section class="cosmetics">
           <div class="cosmetics__container">
             <h2 class="cosmetics__title">
               Cosmetics Info
@@ -115,66 +115,78 @@
             <div class="cosmetics__items">
               <article class="cosmetics__item item-cosmetics">
                 <a href="#" class="item-cosmetics__link-wrapper">
-                  <picture class="item-cosmetics__media">
-                      <source srcset="img/avif/serum(1x).avif 1x, img/avif/serum(2x).avif 2x, img/avif/serum(3x).avif 3x" type="image/avif">
-                      <source srcset="img/webp/serum(1x).webp 1x, img/webp/serum(2x).webp 2x, img/webp/serum(3x).webp 3x" type="image/webp">
-                      <img class="item-cosmetics__img img" src="img/jpg/serum(1x).jpg" alt="serum">
-                  </picture>
+                  <figure class="item-cosmetics__media">
+                    <picture>
+                        <source srcset="img/avif/serum(1x).avif 1x, img/avif/serum(2x).avif 2x, img/avif/serum(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/serum(1x).webp 1x, img/webp/serum(2x).webp 2x, img/webp/serum(3x).webp 3x" type="image/webp">
+                        <img class="item-cosmetics__img img" src="img/jpg/serum(1x).jpg" alt="serum">
+                    </picture>
+                  </figure>
                   <h3 class="item-cosmetics__caption">Cosrx AC Collection Blemish Spot Clearing Serum</h3>
                 </a>
               </article>
 
               <article class="cosmetics__item item-cosmetics">
                 <a href="#" class="item-cosmetics__link-wrapper">
-                  <picture class="item-cosmetics__media">
-                      <source srcset="img/avif/emulsion(1x).avif 1x, img/avif/emulsion(2x).avif 2x, img/avif/emulsion(3x).avif 3x" type="image/avif">
-                      <source srcset="img/webp/emulsion(1x).webp 1x, img/webp/emulsion(2x).webp 2x, img/webp/emulsion(3x).webp 3x" type="image/webp">
-                      <img class="item-cosmetics__img img" src="img/jpg/emulsion(1x).jpg" alt="emulsion">
-                  </picture>
+                  <figure class="item-cosmetics__media">
+                    <picture>
+                        <source srcset="img/avif/emulsion(1x).avif 1x, img/avif/emulsion(2x).avif 2x, img/avif/emulsion(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/emulsion(1x).webp 1x, img/webp/emulsion(2x).webp 2x, img/webp/emulsion(3x).webp 3x" type="image/webp">
+                        <img class="item-cosmetics__img img" src="img/jpg/emulsion(1x).jpg" alt="emulsion">
+                    </picture>
+                  </figure>
                   <h3 class="item-cosmetics__caption">CHI Luxury Black <br> Seed Oil Dry Oil</h3>
                 </a>
               </article>
 
               <article class="cosmetics__item item-cosmetics">
                 <a href="#" class="item-cosmetics__link-wrapper">
-                  <picture class="item-cosmetics__media">
-                      <source srcset="img/avif/cream(1x).avif 1x, img/avif/cream(2x).avif 2x, img/avif/cream(3x).avif 3x" type="image/avif">
-                      <source srcset="img/webp/cream(1x).webp 1x, img/webp/cream(2x).webp 2x, img/webp/cream(3x).webp 3x" type="image/webp">
-                      <img class="item-cosmetics__img img" src="img/jpg/cream(1x).jpg" alt="cream">
-                  </picture>
+                  <figure class="item-cosmetics__media">
+                    <picture>
+                        <source srcset="img/avif/cream(1x).avif 1x, img/avif/cream(2x).avif 2x, img/avif/cream(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/cream(1x).webp 1x, img/webp/cream(2x).webp 2x, img/webp/cream(3x).webp 3x" type="image/webp">
+                        <img class="item-cosmetics__img img" src="img/jpg/cream(1x).jpg" alt="cream">
+                    </picture>
+                  </figure>
                   <h3 class="item-cosmetics__caption">Heimish Bulgarian <br> Rose Satin Cream</h3>
                 </a>
               </article>
 
               <article class="cosmetics__item item-cosmetics">
                 <a href="#" class="item-cosmetics__link-wrapper">
-                  <picture class="item-cosmetics__media">
-                      <source srcset="img/avif/serum-la-roche(1x).avif 1x, img/avif/serum-la-roche(2x).avif 2x, img/avif/serum-la-roche(3x).avif 3x" type="image/avif">
-                      <source srcset="img/webp/serum-la-roche(1x).webp 1x, img/webp/serum-la-roche(2x).webp 2x, img/webp/serum-la-roche(3x).webp 3x" type="image/webp">
-                      <img class="item-cosmetics__img img" src="img/jpg/serum-la-roche(1x).jpg" alt="serum-la-roche">
-                  </picture>
+                  <figure class="item-cosmetics__media">
+                    <picture>
+                        <source srcset="img/avif/serum-la-roche(1x).avif 1x, img/avif/serum-la-roche(2x).avif 2x, img/avif/serum-la-roche(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/serum-la-roche(1x).webp 1x, img/webp/serum-la-roche(2x).webp 2x, img/webp/serum-la-roche(3x).webp 3x" type="image/webp">
+                        <img class="item-cosmetics__img img" src="img/jpg/serum-la-roche(1x).jpg" alt="serum-la-roche">
+                    </picture>
+                  </figure>
                   <h3 class="item-cosmetics__caption">La Roche-Posay Hyalu <br> B5 Serum</h3>
                 </a>
               </article>
 
               <article class="cosmetics__item item-cosmetics">
                 <a href="#" class="item-cosmetics__link-wrapper">
-                  <picture class="item-cosmetics__media">
-                      <source srcset="img/avif/cream-lancome(1x).avif 1x, img/avif/cream-lancome(2x).avif 2x, img/avif/cream-lancome(3x).avif 3x" type="image/avif">
-                      <source srcset="img/webp/cream-lancome(1x).webp 1x, img/webp/cream-lancome(2x).webp 2x, img/webp/cream-lancome(3x).webp 3x" type="image/webp">
-                      <img class="item-cosmetics__img img" src="img/jpg/cream-lancome(1x).jpg" alt="cream-lancome">
-                  </picture>
+                  <figure class="item-cosmetics__media">
+                    <picture>
+                        <source srcset="img/avif/cream-lancome(1x).avif 1x, img/avif/cream-lancome(2x).avif 2x, img/avif/cream-lancome(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/cream-lancome(1x).webp 1x, img/webp/cream-lancome(2x).webp 2x, img/webp/cream-lancome(3x).webp 3x" type="image/webp">
+                        <img class="item-cosmetics__img img" src="img/jpg/cream-lancome(1x).jpg" alt="cream-lancome">
+                    </picture>
+                  </figure>
                   <h3 class="item-cosmetics__caption">Lancome Genifique <br> Youth Activating Day Cream</h3>
                 </a>
               </article>
 
               <article class="cosmetics__item item-cosmetics">
                 <a href="#" class="item-cosmetics__link-wrapper">
-                  <picture class="item-cosmetics__media">
-                      <source srcset="img/avif/mask(1x).avif 1x, img/avif/mask(2x).avif 2x, img/avif/mask(3x).avif 3x" type="image/avif">
-                      <source srcset="img/webp/mask(1x).webp 1x, img/webp/mask(2x).webp 2x, img/webp/mask(3x).webp 3x" type="image/webp">
-                      <img class="item-cosmetics__img img" src="img/jpg/mask(1x).jpg" alt="mask">
-                  </picture>
+                  <figure class="item-cosmetics__media">
+                    <picture>
+                        <source srcset="img/avif/mask(1x).avif 1x, img/avif/mask(2x).avif 2x, img/avif/mask(3x).avif 3x" type="image/avif">
+                        <source srcset="img/webp/mask(1x).webp 1x, img/webp/mask(2x).webp 2x, img/webp/mask(3x).webp 3x" type="image/webp">
+                        <img class="item-cosmetics__img img" src="img/jpg/mask(1x).jpg" alt="mask">
+                    </picture>
+                  </figure>
                   <h3 class="item-cosmetics__caption">Dermalogica Daily <br> Skin Health Charcoal Rescue Masque</h3>
                 </a>
               </article>

@@ -61,14 +61,14 @@ body {
 		// .header__container
 
 		&__container {
-      max-width: 60.4375rem;
+      max-width: 60.125rem;
       min-height: 6.25rem;
       padding-top: 1.5625rem;
       padding-bottom: 1.5625rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 25rem;
+      gap: 18.75rem;
 		}
 
 		// .header__logo
@@ -79,29 +79,46 @@ body {
 
 }
 .menu {
-  flex-grow: 1;
+    // .menu__list
 
-		// .menu__list
-
-		&__list {
-      font-size: 0.75rem;
+    &__list {
       display: flex;
       gap: 1.25rem 2rem;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-		}
+      flex-grow: 1;
+    }
 
-		// .menu__item
+    // .menu__item
 
-		&__item {
-      transition: all 0.3s;
-      border-bottom: 1px solid transparent;
-      &:hover {
-        transform: translateY(-3px);
-        border-bottom: 1px solid $secondary-color;
+    &__item {
+      position: relative;
+    }
+
+    &__link {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: $secondary-color;
+        transition: width 0.3s ease, left 0.3s ease;
       }
-		}
+
+
+      html:not([data-fls-touch]) &:hover {
+        &::after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
 }
 .icon-menu {
   display: none;
@@ -158,9 +175,11 @@ body {
     border: 1px solid #f8f8f8;
     padding: 0.625rem 0.8125rem;
     transition: all 0.3s;
-    &:hover {
-      background-color: #f8f8f8;
-      color: $main-color;
+    html:not([data-fls-touch]) & {
+      &:hover {
+        background-color: #f8f8f8;
+        color: $main-color;
+      }
     }
   }
 }
@@ -203,14 +222,30 @@ body {
       gap: 2.1875rem;
 		}
 
+
+    &__media {
+      flex: 1 1 19.8125rem;
+      max-width: 100%;
+      aspect-ratio: 317 / 485;
+
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
+
     // .about__link
 
     &__link {
       @include mixins.linkButton();
       transition: all 0.3s;
-      &:hover {
-        background-color: $main-color;
-        color: $secondary-color;
+      html:not([data-fls-touch]) & {
+        &:hover {
+          background-color: $main-color;
+          color: $secondary-color;
+        }
       }
     }
 }
@@ -237,7 +272,8 @@ body {
 		// .cosmetics__container
 
 		&__container {
-      @include mixins.container($max-width: 50.875rem);
+      @include mixins.container($max-width: 50.875rem, $display: block);
+      text-align: center;
 		}
 
 		// .cosmetics__title
@@ -257,10 +293,10 @@ body {
 		// .cosmetics__items
 
 		&__items {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+	    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 12.5rem));
+      gap: 4.75rem 5.75rem;
       justify-content: center;
-      gap: 4.75rem 5.75rem; 
       margin-bottom: 8.4375rem;
 		}
 
@@ -269,9 +305,11 @@ body {
 		&__link {
       @include mixins.linkButton();
       transition: all 0.3s;
-      &:hover {
-        background-color: $main-color;
-        color: $secondary-color;
+      html:not([data-fls-touch]) & {
+        &:hover {
+          background-color: $main-color;
+          color: $secondary-color;
+        }
       }
 		}
 }
@@ -297,16 +335,20 @@ body {
       border-bottom: 1px solid transparent;
       padding-bottom: 10px;
       transition: border-bottom 0.3s;
-      &:hover {
-        border-bottom: 1px solid $main-color;
+      html:not([data-fls-touch]) & {
+        &:hover {
+          border-bottom: 1px solid $main-color;
+        }
       }
 		}
 }
 
 
 .item-cosmetics {
-  flex: 1 1 12.5rem;
-  max-width: 18.75rem;
+  max-width: 12.5rem; 
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
   &__link-wrapper {
     display: flex;
     flex-direction: column;
@@ -315,23 +357,23 @@ body {
     color: inherit; 
     height: 100%;
     transition: transform 0.3s;
-    &:hover {
-      .item-cosmetics__img {
-        transform: scale(1.05); 
-      }
-      .item-cosmetics__caption {
-        text-decoration: underline;
-      }
-      .item-cosmetics__media::after {
-        background-color: transparent; 
+    html:not([data-fls-touch]) & {
+      &:hover {
+        .item-cosmetics__img {
+          transform: scale(1.05); 
+        }
+        .item-cosmetics__caption {
+          text-decoration: underline;
+        }
+        .item-cosmetics__media::after {
+          background-color: transparent; 
+        }
       }
     }
   }
   &__media {
-    width: 100%;
-    aspect-ratio: 200 / 208;
+    aspect-ratio: 1 / 1.04;
     position: relative;
-    display: block;
     overflow: hidden;
     &::after {
       content: "";
@@ -342,6 +384,7 @@ body {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
+      pointer-events: none;
     }
   }
 		// .item-cosmetics__img
@@ -349,6 +392,7 @@ body {
 		&__img {
       height: 100%;
       width: 100%;
+      display: block;
       object-fit: cover;
       transition: transform 0.5s ease;
 		}
@@ -374,9 +418,11 @@ body {
       font-size: 20px;
       color: $secondary-color;
       transition: all 0.3s;
-      &:hover {
-        transform: translateY(-5px);
-        text-decoration: underline;
+      html:not([data-fls-touch]) & {
+        &:hover {
+          transform: translateY(-5px);
+          text-decoration: underline;
+        }
       }
     }
 }
@@ -385,7 +431,7 @@ body {
 
 /* ------------------------------------------------------------------- */
 
-@media (max-width: 60rem) {
+@media (max-width: 60em) {
   .header {
     &__container {
       gap: 1rem;
@@ -419,6 +465,9 @@ body {
 
 @media (max-width: 48em) {
   .header {
+    &__container {
+      min-height: 4.375rem;
+    }
     &__logo {
       position: relative;
       z-index: 3;
@@ -493,6 +542,10 @@ body {
     }
   }
 
+  [data-menu-open] body {
+    overflow: hidden;
+  }
+
   [data-menu-open] {
     .icon-menu {
       span {
@@ -532,10 +585,3 @@ body {
   }
 }
 
-@media (max-width: 45rem) {
-  .cosmetics {
-    &__items {
-      gap: 3.125rem; 
-		}
-  }
-}
