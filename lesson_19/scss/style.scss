@@ -294,7 +294,7 @@ body {
 
 		&__items {
       display: grid;
-	    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 12.5rem));
+	    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
       gap: 4.75rem 5.75rem;
       justify-content: center;
       margin-bottom: 8.4375rem;
@@ -345,7 +345,7 @@ body {
 
 
 .item-cosmetics {
-  max-width: 12.5rem; 
+  max-width: 16.5rem;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -372,7 +372,7 @@ body {
     }
   }
   &__media {
-    aspect-ratio: 1 / 1.04;
+    aspect-ratio: 200 / 208;
     position: relative;
     overflow: hidden;
     &::after {
@@ -462,6 +462,14 @@ body {
   }
 }
 
+
+@media (max-width: 50.75em) {
+  .cosmetics {
+    &__items {
+      gap: 3rem;
+    }
+  }
+}
 
 @media (max-width: 48em) {
   .header {

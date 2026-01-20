@@ -370,7 +370,7 @@ html:not([data-fls-touch]) .about__link:hover {
 }
 .cosmetics__items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 12.5rem));
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
   gap: 4.75rem 5.75rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -418,7 +418,7 @@ html:not([data-fls-touch]) .menu-cosmetics__link:hover {
 }
 
 .item-cosmetics {
-  max-width: 12.5rem;
+  max-width: 16.5rem;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -452,7 +452,7 @@ html:not([data-fls-touch]) .item-cosmetics__link-wrapper:hover .item-cosmetics__
   background-color: transparent;
 }
 .item-cosmetics__media {
-  aspect-ratio: 1/1.04;
+  aspect-ratio: 200/208;
   position: relative;
   overflow: hidden;
 }
@@ -540,6 +540,11 @@ html:not([data-fls-touch]) .footer__link:hover {
         -ms-flex-align: center;
             align-items: center;
     gap: 3.75rem;
+  }
+}
+@media (max-width: 50.75em) {
+  .cosmetics__items {
+    gap: 3rem;
   }
 }
 @media (max-width: 48em) {
